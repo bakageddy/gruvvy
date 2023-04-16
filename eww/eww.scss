@@ -1,0 +1,95 @@
+* {
+	all: unset; //Unsets everything so you can style everything from scratch
+}
+
+//Global Styles
+.bar {
+	background-color: #1d2021;
+	color: #ebdbb2;
+	padding: 10px;
+	border-radius: 16px;
+}
+
+// Styles on classes (see eww.yuck for more information)
+
+.sidestuff slider {
+	all: unset;
+	color: #8ec07c;
+}
+
+.metric scale trough highlight {
+	all: unset;
+	background-color: #d3869b;
+	color: #1d2021;
+	border-radius: 10px;
+}
+
+.metric scale trough {
+	all: unset;
+	background-color: #665c54;
+	border-radius: 50px;
+	min-height: 3px;
+	min-width: 50px;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+.metric scale trough highlight {
+	all: unset;
+	background-color: #d3869b;
+	color: #1d2021;
+	border-radius: 10px;
+}
+.metric scale trough {
+	all: unset;
+	background-color: #665c54;
+	border-radius: 50px;
+	min-height: 3px;
+	min-width: 50px;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+.workspaces {
+	padding-left: 1rem;
+	font-size: 24;
+	color: #83a598
+}
+
+.workspaces button:hover {
+	color: #fabd2f;
+}
+
+.volume {
+	color: #98971a;
+	font-size: 20;
+}
+
+.ram {
+	color: #8ec07c;
+	font-size: 30;
+}
+
+.disk {
+	color: #fabd2f;
+	font-size: 20;
+}
+
+.music {
+	color: #665c54;
+	font-family: 'Iosevka';
+	font-size: 14px;
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
+.time_stuff {
+	padding-right: 1rem;
+	font-family: 'Iosevka';
+	color: #ebdbb2;
+}
+
+.battery {
+	color: #fe8019;
+	font-size: 30;
+}

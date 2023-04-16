@@ -1,0 +1,66 @@
+configuration {
+  display-run: "𝛌 ";
+  display-drun: "𝛌 ";
+  display-window: "𝛌 ";
+  drun-display-format: "{name}";
+  font: "Iosevka Medium 14";
+  modi: "window,run,drun";
+  terminal: "kitty";
+  show-icons: false;
+}
+
+* {
+
+  bg: #1d2021;
+  bg-alt: #8ec07c;
+
+  fg: #fe8019;
+
+  background-color: @bg;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+element {
+  padding: 12;
+  text-color: @bg-alt;
+}
+
+element selected {
+  text-color: @fg;
+}
+
+element-text {
+  padding: 2;
+  background-color: inherit;
+  text-color: inherit;
+}
+
+entry {
+  padding: 12 0 12 3;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [prompt, entry];
+}
+
+listview {
+  columns: 2;
+  lines: 4;
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+prompt {
+  padding: 12 0 0 12;
+  text-color: @fg;
+}
+
+window {
+  transparency: "real";
+}
