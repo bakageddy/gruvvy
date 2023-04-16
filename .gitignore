@@ -1,0 +1,12 @@
+nvim/
+QtProject.conf
+cef_user_data/
+dconf/
+htop/
+pulse/
+qBittorrent/
+systemd/
+ttyper/
+tuir/
+user-dirs.dirs
+user-dirs.locale
