@@ -18,7 +18,7 @@ bspc config normal_border_color     \#1d2021
 bspc rule -a Zathura state=tiled
 bspc rule -a Emacs state=tiled
 
-feh --bg-fill ~/Pictures/wallpapers/gruvboxGundam.png &
+feh --bg-fill ~/Pictures/gruvbox/gruvbox-wallpapers/wallpapers/anime/ghibli-japanese-walled-garden.png &
 pidof eww && killall eww
 $HOME/.software/eww/target/release/eww open bar &
 pidof picom || pkill picom
