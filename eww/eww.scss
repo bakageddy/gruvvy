@@ -67,7 +67,7 @@
 
 .ram {
 	color: #8ec07c;
-	font-size: 30;
+	font-size: 20;
 }
 
 .disk {
@@ -91,5 +91,10 @@
 
 .battery {
 	color: #fe8019;
-	font-size: 30;
+	font-family: "Iosevka";
+	font-size: 20;
+}
+
+.weather {
+	font-family: "Iosevka"
 }
