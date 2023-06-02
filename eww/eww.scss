@@ -1,11 +1,22 @@
+$black:		#1D2021;
+$white:		#EBDBB2;
+$green:		#B8BB26;
+$cyan:		#8EC07C;
+$blue:		#83A598;
+$red:		#FB4934;
+$yellow:	#FABD2F;
+$magenta:	#D3869B;
+$orange:	#FE8019;
+$grey:		#665c54;
+
 * {
 	all: unset; //Unsets everything so you can style everything from scratch
 }
 
 //Global Styles
 .bar {
-	background-color: #1d2021;
-	color: #ebdbb2;
+	background-color: $black;
+	color: $white;
 	padding: 10px;
 	border-radius: 16px;
 }
@@ -14,19 +25,19 @@
 
 .sidestuff slider {
 	all: unset;
-	color: #8ec07c;
+	color: $cyan;
 }
 
 .metric scale trough highlight {
 	all: unset;
-	background-color: #d3869b;
-	color: #1d2021;
+	background-color: $magenta;
+	color: $black;
 	border-radius: 10px;
 }
 
 .metric scale trough {
 	all: unset;
-	background-color: #665c54;
+	background-color: $grey;
 	border-radius: 50px;
 	min-height: 3px;
 	min-width: 50px;
@@ -36,13 +47,13 @@
 
 .metric scale trough highlight {
 	all: unset;
-	background-color: #d3869b;
-	color: #1d2021;
+	background-color: $magenta;
+	color: $black;
 	border-radius: 10px;
 }
 .metric scale trough {
 	all: unset;
-	background-color: #665c54;
+	background-color: $grey;
 	border-radius: 50px;
 	min-height: 3px;
 	min-width: 50px;
@@ -53,30 +64,30 @@
 .workspaces {
 	padding-left: 1rem;
 	font-size: 24;
-	color: #83a598
+	color: $blue;
 }
 
 .workspaces button:hover {
-	color: #fabd2f;
+	color: $yellow;
 }
 
 .volume {
-	color: #98971a;
+	color: $green;
 	font-size: 20;
 }
 
 .ram {
-	color: #8ec07c;
+	color: $cyan;
 	font-size: 20;
 }
 
 .disk {
-	color: #fabd2f;
+	color: $yellow;
 	font-size: 20;
 }
 
 .music {
-	color: #665c54;
+	color: $grey;
 	font-family: 'Iosevka';
 	font-size: 14px;
 	padding-left: 3rem;
@@ -86,11 +97,11 @@
 .time_stuff {
 	padding-right: 1rem;
 	font-family: 'Iosevka';
-	color: #ebdbb2;
+	color: $white;
 }
 
 .battery {
-	color: #fe8019;
+	color: $orange;
 	font-family: "Iosevka";
 	font-size: 20;
 }

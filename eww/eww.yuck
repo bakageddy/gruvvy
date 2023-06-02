@@ -7,14 +7,14 @@
 (defpoll time :interval "10s"
   "date '+%H:%M %b %d, %Y'")
 
-(defpoll weather :interval "60s"
-  "OPENWEATHER_KEY=$OPENWEATHER_KEY wither_script")
+;; (defpoll weather :interval "60s"
+;;   "OPENWEATHER_KEY=$OPENWEATHER_KEY wither_script")
 
 (defwidget time_widget []
   (box :class "time_stuff" "${time}"))
 
-(defwidget weather_widget []
- (box :class "weather" "  ${weather}"))
+;; (defwidget weather_widget []
+;;  (box :class "weather" "  ${weather}"))
 
 (defwidget bar []
   (centerbox :orientation "h"
@@ -36,7 +36,7 @@
     (box :class "disk" (metric :label " "
                                :value {round((1 - (EWW_DISK["/"].free / EWW_DISK["/"].total)) * 100, 0)}
                                :onchange ""))
-    (weather_widget)
+    ;; (weather_widget)
     (time_widget)))
 
 (defwidget workspaces []
@@ -56,7 +56,7 @@
        :orientation "h"
        :space-evenly false
        :halign "center"
-    {music != "" ? "  ${music}" : ""}))
+    {music != "" ? "   ${music}" : ""}))
 
 
 (defwidget metric [label value onchange]

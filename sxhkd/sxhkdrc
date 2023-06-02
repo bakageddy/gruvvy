@@ -151,5 +151,11 @@ super + shift + e
 super + shift + n
     wezterm -e nvim
 
+super + shift + m
+    wezterm -e ncmpcpp
+
 super + shift + z
     zathura
+
+super + shift + c
+	wezterm -e cava

@@ -11,122 +11,160 @@ disabled = true
 disabled = true
 
 [bun]
-format = "via [$symbol]($style)"
+disabled = true
 
 [buf]
-format = "via [$symbol]($style)"
+disabled = true
 
 [cmake]
 format = "via [$symbol]($style)"
 
+disabled = true
 [cobol]
 format = "via [$symbol]($style)"
+disabled = true
 
 [crystal]
 format = "via [$symbol]($style)"
+disabled = true
 
 [daml]
 format = "via [$symbol]($style)"
+disabled = true
 
 [dart]
 format = "via [$symbol]($style)"
+disabled = true
 
 [deno]
 format = "via [$symbol]($style)"
+disabled = true
 
 [dotnet]
 format = "[$symbol(🎯 $tfm )]($style)"
+disabled = true
 
 [elixir]
 format = 'via [$symbol]($style)'
+disabled = true
 
 [elm]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [erlang]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [fennel]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [golang]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [gradle]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [haxe]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [helm]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [java]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [julia]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [kotlin]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [lua]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [meson]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [nim]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [nodejs]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [ocaml]
+disabled = true
 format = 'via [$symbol(\($switch_indicator$switch_name\) )]($style)'
 
 [opa]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [perl]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [php]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [pulumi]
+disabled = true
 format = 'via [$symbol$stack]($style)'
 
 [purescript]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [python]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [raku]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [red]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [rlang]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [ruby]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [rust]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [swift]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [vagrant]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [vlang]
+disabled = true
 format = 'via [$symbol]($style)'
 
 [zig]
+disabled = true
 format = 'via [$symbol]($style)'
 
