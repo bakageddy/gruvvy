@@ -1,13 +1,24 @@
-$black:		#1D2021;
-$white:		#EBDBB2;
-$green:		#B8BB26;
-$cyan:		#8EC07C;
-$blue:		#83A598;
-$red:		#FB4934;
-$yellow:	#FABD2F;
-$magenta:	#D3869B;
-$orange:	#FE8019;
-$grey:		#665c54;
+// $black:		#1D2021;
+// $white:		#EBDBB2;
+// $green:		#B8BB26;
+// $cyan:		#8EC07C;
+// $blue:		#83A598;
+// $red:		#FB4934;
+// $yellow:		#FABD2F;
+// $magenta:	#D3869B;
+// $orange:		#FE8019;
+// $grey:		#665c54;
+
+$black:		#1F1F28;
+$white:		#DCD7BA;
+$green:		#76946A;
+$cyan:		#7AA89F;
+$blue:		#7FB4CA;
+$red:		#FF5D62;
+$yellow:	#DCA561;
+$magenta:	#957FB8;
+$orange:	#FFA066;
+$grey:		#727169;
 
 * {
 	all: unset; //Unsets everything so you can style everything from scratch

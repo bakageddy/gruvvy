@@ -11,7 +11,7 @@ config.animation_fps = 1
 config.enable_kitty_graphics = true
 config.enable_scroll_bar = false
 config.enable_tab_bar = false
-config.color_scheme = 'Gruvbox dark, hard (base16)'
+config.color_scheme = 'kanagawabones'
 config.font = wezterm.font_with_fallback({
 	"Iosevka Term",
 	{ family = "Iosevka Nerd Font", scale = 0.75 }
