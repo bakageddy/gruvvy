@@ -4,8 +4,8 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d I II III IV V
 
-bspc config border_width            2
-bspc config window_gap              30
+bspc config border_width            0
+bspc config window_gap              25
 
 bspc config split_ratio             0.50
 bspc config borderless_monocle      true
@@ -18,7 +18,7 @@ bspc config normal_border_color     \#1F1F28
 bspc rule -a Zathura state=tiled
 bspc rule -a Emacs state=tiled
 
-feh --bg-fill ~/Pictures/wallpapers/gruvboxSushiStreets.jpg &
+feh --bg-fill ~/Pictures/wallpapers/redGyrados.png &
 pidof eww && killall eww
 $HOME/.software/eww/target/release/eww open bar &
 pidof picom || pkill picom

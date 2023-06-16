@@ -1,7 +1,7 @@
-set font                        "JetBrains Mono 12"
+set font                        "Iosevka Term Regular 12"
 set scroll-page-aware           "true"
 set recolor                     "true"
 set guioptions                  ""
 set adjust-open                 "best-fit"
 
-include                         ./gruvbox
+include                         ./kanagawa

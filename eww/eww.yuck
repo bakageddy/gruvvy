@@ -54,9 +54,9 @@
 (defwidget music []
   (box :class "music"
        :orientation "h"
-       :space-evenly false
+       :space-evenly true
        :halign "center"
-    {music != "" ? "   ${music}" : ""}))
+    {music != "" ? "  ${music}" : ""}))
 
 
 (defwidget metric [label value onchange]
