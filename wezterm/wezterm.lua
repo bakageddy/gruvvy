@@ -17,13 +17,13 @@ config.font = wezterm.font_with_fallback({
 	"Iosevka",
 	{ family = "Iosevka Nerd Font", scale = 0.75 }
 })
-config.font_size = 15.0
+config.font_size = 12.0
 config.cursor_blink_rate = 0
 config.window_padding = {
 	left   = 40,
 	right  = 40,
-	top    = 30,
-	bottom = 30,
+	top    = 40,
+	bottom = 40,
 }
 
 return config

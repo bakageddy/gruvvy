@@ -18,7 +18,7 @@ bspc config normal_border_color     \#1F1F28
 bspc rule -a Zathura state=tiled
 bspc rule -a Emacs state=tiled
 
-feh --bg-fill ~/Pictures/wallpapers/redGyrados.png &
+feh --bg-fill --randomize ~/Pictures/fav/* &
 pidof eww && killall eww
 $HOME/.software/eww/target/release/eww open bar &
 pidof picom || pkill picom
