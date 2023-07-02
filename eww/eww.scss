@@ -6,6 +6,7 @@
 // $red:		#FB4934;
 // $yellow:		#FABD2F;
 // $magenta:	#D3869B;
+// $violet:		#D3869B;
 // $orange:		#FE8019;
 // $grey:		#665c54;
 
@@ -17,8 +18,15 @@ $blue:		#7FB4CA;
 $red:		#FF5D62;
 $yellow:	#DCA561;
 $magenta:	#957FB8;
+$violet:	#d27e99;
 $orange:	#FFA066;
 $grey:		#727169;
+
+$radius: 16px;
+$padding: 1.5rem;
+$font_size: 14px;
+$font_weight: 600;
+$font: "Iosevka";
 
 * {
 	all: unset; //Unsets everything so you can style everything from scratch
@@ -26,97 +34,81 @@ $grey:		#727169;
 
 //Global Styles
 .bar {
-	background-color: $black;
-	color: $white;
-	padding: 10px;
-	border-radius: 16px;
-}
-
-// Styles on classes (see eww.yuck for more information)
-
-.sidestuff slider {
-	all: unset;
-	color: $cyan;
-}
-
-.metric scale trough highlight {
-	all: unset;
-	background-color: $magenta;
-	color: $black;
-	border-radius: 10px;
-}
-
-.metric scale trough {
-	all: unset;
-	background-color: $grey;
-	border-radius: 50px;
-	min-height: 3px;
-	min-width: 50px;
-	margin-left: 10px;
-	margin-right: 20px;
-}
-
-.metric scale trough highlight {
-	all: unset;
-	background-color: $magenta;
-	color: $black;
-	border-radius: 10px;
-}
-.metric scale trough {
-	all: unset;
-	background-color: $grey;
-	border-radius: 50px;
-	min-height: 3px;
-	min-width: 50px;
-	margin-left: 10px;
-	margin-right: 20px;
+	background-color: rgba($color: $black, $alpha: 0.0);
 }
 
 .workspaces {
-	padding-left: 1rem;
+	border-radius: $radius;
+	padding-left: $padding;
+	padding-right: $padding;
 	font-size: 24;
-	color: $blue;
-}
-
-.workspaces button:hover {
-	color: $yellow;
-}
-
-.volume {
-	color: $green;
-	font-size: 20;
-}
-
-.ram {
-	color: $cyan;
-	font-size: 20;
-}
-
-.disk {
-	color: $yellow;
-	font-size: 20;
-}
-
-.music {
-	color: $grey;
-	font-family: 'Iosevka';
-	font-size: 14px;
-	padding-left: 3rem;
-	padding-right: 3rem;
-}
-
-.time_stuff {
-	padding-right: 1rem;
-	font-family: 'Iosevka';
-	color: $white;
+	background-color: $cyan;
+	color: $black;
 }
 
 .battery {
-	color: $orange;
-	font-family: "Iosevka";
-	font-size: 20;
+	background-color: $yellow;
+	border-radius: $radius;
+	padding-right: $padding;
+	padding-left: $padding;
+	color: $black;
+	font-family: $font;
+	font-size: $font_size;
+	font-weight: $font_weight;
 }
 
-.weather {
-	font-family: "Iosevka"
+.volume {
+	background-color: $blue;
+	border-radius: $radius;
+	padding-right: $padding;
+	padding-left: $padding;
+	color: $black;
+	font-family: $font;
+	font-size: $font_size;
+	font-weight: $font_weight;
+}
+
+.ram {
+	background-color: $green;
+	border-radius: $radius;
+	padding-right: $padding;
+	padding-left: $padding;
+	color: $black;
+	font-size: 20;
+	font-family: $font;
+	font-size: $font_size;
+	font-weight: $font_weight;
+}
+
+.disk {
+	background-color: $violet;
+	border-radius: $radius;
+	padding-right: $padding;
+	padding-left: $padding;
+	color: $black;
+	font-family: $font;
+	font-size: $font_size;
+	font-weight: $font_weight;
+}
+
+.time_stuff {
+	color: $black;
+	border-radius: $radius;
+	padding-right: $padding;
+	padding-left: $padding;
+	font-family: $font;
+	font-size: $font_size;
+	background-color: $magenta;
+	font-weight: $font_weight;
+}
+
+.music {
+	background-color: $grey;
+	color: $black;
+	border-radius: $radius;
+	font-family: $font;
+	font-weight: $font_weight;
+	font-size: $font_size;
+	padding-left: $padding;
+	padding-right: $padding;
 }

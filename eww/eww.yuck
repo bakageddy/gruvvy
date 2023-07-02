@@ -7,36 +7,27 @@
 (defpoll time :interval "10s"
   "date '+%H:%M %b %d, %Y'")
 
-;; (defpoll weather :interval "60s"
-;;   "OPENWEATHER_KEY=$OPENWEATHER_KEY wither_script")
+(defpoll title :interval "0.5s" "xtitle -t 40")
 
 (defwidget time_widget []
   (box :class "time_stuff" "${time}"))
 
-;; (defwidget weather_widget []
-;;  (box :class "weather" "  ${weather}"))
+(defwidget sound []
+	(box :class "volume" "  ${volume}"))
 
 (defwidget bar []
-  (centerbox :orientation "h"
+  (centerbox :class "super" :orientation "h"
     (workspaces)
     (music)
     (sidestuff)))
 
 (defwidget sidestuff []
-  (box :class "sidestuff" :orientation "h" :space-evenly false :halign "end"
-    (box :class "battery" (metric :label " "
-                                  :value {EWW_BATTERY.total_avg}
-                                  :onchange ""))
-    (box :class "volume" (metric :label " "
-                                 :value volume
-                                 :onchange "amixer -D pulse sset Master {}%"))
-    (box :class "ram" (metric :label " "
-                              :value {EWW_RAM.used_mem_perc}
-                              :onchange ""))
-    (box :class "disk" (metric :label " "
-                               :value {round((1 - (EWW_DISK["/"].free / EWW_DISK["/"].total)) * 100, 0)}
-                               :onchange ""))
-    ;; (weather_widget)
+  (box :class "sidestuff" :orientation "h" :space-evenly false :spacing 10 :halign "end"
+    (box :class "battery" "  ${round(EWW_BATTERY.total_avg, 0)}")
+    (box (sound))
+	
+    (box :class "ram" "  ${round(EWW_RAM.used_mem_perc, 0)}")
+    (box :class "disk" "  ${round((1 - (EWW_DISK["/"].free / EWW_DISK["/"].total)) * 100, 0)}")
     (time_widget)))
 
 (defwidget workspaces []
@@ -44,7 +35,7 @@
        :orientation "h"
        :space-evenly true
        :halign "start"
-       :spacing 10
+       :spacing 15
     (button :onclick "bspc desktop -f I" "")
     (button :onclick "bspc desktop -f II" "")
     (button :onclick "bspc desktop -f III" "")
@@ -56,21 +47,7 @@
        :orientation "h"
        :space-evenly true
        :halign "center"
-    {music != "" ? "  ${music}" : ""}))
-
-
-(defwidget metric [label value onchange]
-  (box :orientation "h"
-       :class "metric"
-       :space-evenly false
-    (box :class "label" label)
-    (scale :min 0
-           :max 101
-           :active {onchange != ""}
-           :value value
-           :onchange onchange)))
-
-
+    {music != "" ? "  ${music}" : title != "" ? "${title}": "Hello, Dinesh! 👋"}))
 
 (defwindow bar
   :monitor 0
