@@ -4,6 +4,7 @@ cef_user_data/
 dconf/
 htop/
 pulse/
+emacs/
 qBittorrent/
 systemd/
 ttyper/

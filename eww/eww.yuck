@@ -7,7 +7,7 @@
 (defpoll time :interval "10s"
   "date '+%H:%M %b %d, %Y'")
 
-(defpoll title :interval "0.5s" "xtitle -t 40")
+(defpoll title :interval "10s" "xtitle -t 40")
 
 (defwidget time_widget []
   (box :class "time_stuff" "${time}"))
@@ -17,8 +17,8 @@
 
 (defwidget bar []
   (centerbox :class "super" :orientation "h"
-    (workspaces)
     (music)
+    (workspaces)
     (sidestuff)))
 
 (defwidget sidestuff []

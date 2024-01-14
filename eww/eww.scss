@@ -1,26 +1,39 @@
-// $black:		#1D2021;
-// $white:		#EBDBB2;
-// $green:		#B8BB26;
-// $cyan:		#8EC07C;
-// $blue:		#83A598;
-// $red:		#FB4934;
-// $yellow:		#FABD2F;
-// $magenta:	#D3869B;
-// $violet:		#D3869B;
-// $orange:		#FE8019;
-// $grey:		#665c54;
+$black:			#1D2021;
+$white:			#EBDBB2;
+$green:			#B8BB26;
+$cyan:			#8EC07C;
+$blue:			#83A598;
+$red:			#FB4934;
+$yellow:		#FABD2F;
+$magenta:		#D3869B;
+$violet:		#D3869B;
+$orange:		#FE8019;
+// $grey:			#3c3836;
 
-$black:		#1F1F28;
-$white:		#DCD7BA;
-$green:		#76946A;
-$cyan:		#597B75;
-$blue:		#7FB4CA;
-$red:		#FF5D62;
-$yellow:	#DCA561;
-$magenta:	#957FB8;
-$violet:	#d27e99;
-$orange:	#FFA066;
-$grey:		#727169;
+// $black:		#1F1F28;
+// $white:		#DCD7BA;
+// $green:		#76946A;
+// $cyan:		#6A9589;
+// // $blue:		#7FB4CA;
+// $blue:		#949fb5;
+// // $red:		#FF5D62;
+// $red:		#c4746e;
+// // $yellow:	#DCA561;
+// $yellow:	#c4b28a;
+// // $magenta:	#957FB8;
+// $magenta:	#a292a3;
+// $violet:	#d27e99;
+// $orange:	#FFA066;
+$grey:		#7a8382;
+
+// $black:		#0d0c0c;
+// $white:		#c5c9c5;
+// $green:		#87a987;
+// $cyan:		#597B75;
+// $magenta:	#8992a7;
+// $violet:	#a292a3;
+// $orange:	#b6927b;
+// $grey:		#737c73;
 
 $radius: 16px;
 $padding: 1.5rem;
@@ -34,7 +47,8 @@ $font: "Iosevka";
 
 //Global Styles
 .bar {
-	background-color: rgba($color: $black, $alpha: 0.0);
+	background-color: rgba($color: $grey, $alpha: 0.0);
+	border-radius: $radius;
 }
 
 .workspaces {
@@ -81,7 +95,7 @@ $font: "Iosevka";
 }
 
 .disk {
-	background-color: $violet;
+	background-color: $red;
 	border-radius: $radius;
 	padding-right: $padding;
 	padding-left: $padding;
@@ -103,12 +117,14 @@ $font: "Iosevka";
 }
 
 .music {
-	background-color: $grey;
-	color: $black;
+	background-color: $black;
+	color: $white;
 	border-radius: $radius;
 	font-family: $font;
 	font-weight: $font_weight;
 	font-size: $font_size;
 	padding-left: $padding;
 	padding-right: $padding;
+	margin-right: $padding;
+	margin-left: $padding;
 }
