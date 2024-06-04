@@ -1,0 +1,4 @@
+set previewer ctpv
+set cleaner ctpvclear
+&cptv -s $id
+&ctpvquit $id

@@ -1,5 +1,5 @@
 set notification-error-bg       "#1D2021"
-set notification-error-fg       "#FB4934"
+set notification-error-fg       "#FF5F5F"
 set notification-warning-bg     "#1D2021"
 set notification-warning-fg     "#FE8019"
 set notification-bg             "#1D2021"
@@ -24,7 +24,7 @@ set statusbar-bg                "#1D2021"
 set statusbar-fg                "#EBDBB2"
 
 set highlight-color             "#FE8019"
-set highlight-active-color      "#FB4934"
+set highlight-active-color      "#FF5F5F"
 
 set default-bg                  "#1D2021"
 set default-fg                  "#EBDBB2"

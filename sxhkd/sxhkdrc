@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	wezterm
+	kitty
 
 # program launcher
 super + @space
@@ -146,16 +146,16 @@ super + shift + b
     firefox
 
 super + shift + e
-    wezterm -e ranger
+    kitty -e ranger
 
 super + shift + n
-    wezterm -e nvim
+    kitty -e nvim
 
 super + shift + m
-    wezterm -e ncmpcpp
+    kitty -e ncmpcpp
 
 super + shift + z
     zathura
 
 super + shift + c
-	wezterm -e cava
+	kitty -e cava
